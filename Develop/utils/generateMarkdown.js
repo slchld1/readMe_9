@@ -1,4 +1,38 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+class MarkDown {
+    static generateReadMe(output){
+      return `
+      # ${output.title}
+
+      ## Table of Content
+      -[Project Description](#Description)
+      -[Usage](#Usage)
+      -[Installation](#Installation)
+      -[Questions](#Questions)
+      -[License](#License)
+
+      ## Description
+      ${output.description}
+
+      ## Usage
+      ${output.usage}
+
+      ## Installation
+      ${output.installation}
+
+      ## Contributing
+      ${output.contributing}
+
+      ## Questions
+      ${output.email}
+      ${output.github}
+
+      ## License
+      ${output.license}
+      `
+    }
+
+}
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
