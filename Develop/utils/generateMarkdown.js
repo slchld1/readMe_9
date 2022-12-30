@@ -2,43 +2,42 @@
 class MarkDown {
     static generateReadMe(output){
       return `
+# ${output.title}
+https://github.com/${output.user}/${output.repository}
       
-      # ${output.title}
-      https://github.com/${output.user}/${output.repository}
-      
-      ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${output.user}/${output.repository}?style=flat&logo=appveyor)
-      ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${output.user}/${output.repository}?style=flat&logo=appveyor)
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${output.user}/${output.repository}?style=flat&logo=appveyor)
+  ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${output.user}/${output.repository}?style=flat&logo=appveyor)
 
-      ## Table of Content
-      -[Project Description](#Description)
-      -[Usage](#Usage)
-      -[Installation](#Installation)
-      -[Contributing](#Contributing)
-      -[Tests](#Tests)
-      -[Questions](#Questions)
-      -[License](#License)
+## Table of Content
+-[Project Description](#Description)
+-[Usage](#Usage)
+-[Installation](#Installation)
+-[Contributing](#Contributing)
+-[Tests](#Tests)
+-[Questions](#Questions)
+-[License](#License)
 
-      ## Description
-      ${output.description}
+## Description
+${output.description}
 
-      ## Usage
-      ${output.usage}
+## Usage
+${output.usage}
 
-      ## Installation
-      ${output.installation}
+## Installation
+${output.installation}
 
-      ## Contributing
-      ${output.contributing}
+## Contributing
+${output.contributing}
 
-      ## Tests
-      ${output.tests}
+## Tests
+${output.tests}
 
-      ## Questions
-      ${output.email}
-      ${output.user}
+## Questions
+${output.email}
+${output.user}
 
-      ## License
-      ${output.license}`
+## License
+${output.license}`
     }
 
 }
