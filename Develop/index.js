@@ -64,6 +64,8 @@ const questions = [
         validate: function (output) {
             if (output === 0) {
                 return console.log('GitHub repo is required.')
+            }else {
+                return true
             }
         }
     },
@@ -73,10 +75,10 @@ const questions = [
         message: 'Please provide any tests written:',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Choose your License:',
-        choices: ['MIT', 'ISC', 'Mozilla Public License 2.0', 'Unlicensed'],
+        choices: ['MIT License', 'ISC License', 'Mozilla Public License 2.0', 'Unlicensed'],
     }
 ];
 

@@ -33,8 +33,7 @@ class MarkDown {
       ${output.github}
 
       ## License
-      ${output.license}
-      `
+      ${output.license}`
     }
 
 }
