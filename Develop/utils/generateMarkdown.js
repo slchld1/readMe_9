@@ -7,15 +7,15 @@ https://github.com/${output.user}/${output.repository}
       
 ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${output.user}/${output.repository}?style=flat&logo=appveyor)
   ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${output.user}/${output.repository}?style=flat&logo=appveyor)
-
-## Table of Content
-*[Project Description](#Description)
-*[Usage](#Usage)
-*[Installation](#Installation)
-*[Contributing](#Contributing)
-*[Tests](#Tests)
-*[Questions](#Questions)
-*[License](#License)
+  ![badge](https://img.shields.io/badge/license-${output.license}-brightgreen)<br />
+## Table of Contents
+- [Project Description](#description)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
 
 ## Description
 ${output.description}
