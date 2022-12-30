@@ -9,13 +9,13 @@ https://github.com/${output.user}/${output.repository}
   ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${output.user}/${output.repository}?style=flat&logo=appveyor)
 
 ## Table of Content
--[Project Description](#Description)
--[Usage](#Usage)
--[Installation](#Installation)
--[Contributing](#Contributing)
--[Tests](#Tests)
--[Questions](#Questions)
--[License](#License)
+*[Project Description](#Description)
+*[Usage](#Usage)
+*[Installation](#Installation)
+*[Contributing](#Contributing)
+*[Tests](#Tests)
+*[Questions](#Questions)
+*[License](#License)
 
 ## Description
 ${output.description}
