@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const MarkDown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 const { resolveObjectURL } = require('buffer');
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -47,6 +48,17 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'tests',
+        message: 'Please provide any tests written:',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Choose your License:',
+        choices: ['MIT License', 'ISC License', 'Mozilla Public License 2.0', 'Unlicensed'],
+    },
+    {
+        type: 'input',
         name: 'email',
         message: 'Please enter your Email:',
         validate: function (output) {
@@ -59,27 +71,28 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'github',
-        message: 'Please enter the name of your GitHub repo:',
+        name: 'user',
+        message: 'Please enter the name of your GitHub username',
         validate: function (output) {
             if (output === 0) {
-                return console.log('GitHub repo is required.')
+                return console.log('GitHub username is required.')
             }else {
-                return true
+                return true;
             }
         }
     },
     {
         type: 'input',
-        name: 'tests',
-        message: 'Please provide any tests written:',
+        name: 'repository',
+        message: 'Please enter the name of your GitHub repository:',
+        validate: function (output) {
+            if (output === 0) {
+                return console.log('GitHub repository name is required.')
+            } else {
+                return true;
+            }
+        }
     },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'Choose your License:',
-        choices: ['MIT License', 'ISC License', 'Mozilla Public License 2.0', 'Unlicensed'],
-    }
 ];
 
 // TODO: Create a function to write README file
@@ -93,7 +106,6 @@ function writeToFile(fileName, data) {
         });
 }
 
-// const createFile = utils.promisify(writeToFile)
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
