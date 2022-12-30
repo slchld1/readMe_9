@@ -37,7 +37,7 @@ ${output.email}
 ${output.user}
 
 ## License
-${output.license}`
+${output.license} License`
     }
 
 }
