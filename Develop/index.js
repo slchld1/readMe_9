@@ -55,7 +55,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose your License:',
-        choices: ['MIT License', 'ISC License', 'Mozilla Public License 2.0', 'Unlicensed'],
+        choices: ['MIT', 'ISC', 'Mozilla Public License 2.0', 'Unlicensed'],
     },
     {
         type: 'input',
