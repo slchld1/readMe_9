@@ -74,7 +74,7 @@ if (output.tests !== ""){
 let questionMark =
 `
 ## Questions
-For any Additional questions, Please reach out to: ${output.email}
+For any Additional questions, Please reach out to: ${output.email}\n
 Or visit ${output.user} on github! Thank you.\n`
 
 markdown += questionMark;
@@ -135,7 +135,7 @@ function renderLicenseSection(license) {
   let licenseSection = "";
 
   if (license != "None") {
-    licenseSection += "For more information, please refer to "+ renderLicenseLink(license) + ".\n";
+    licenseSection += "\nFor more information, please refer to "+ renderLicenseLink(license) + ".\n";
   }
 
   return licenseSection;

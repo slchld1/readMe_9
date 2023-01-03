@@ -1,10 +1,10 @@
 
-# test
-https://github.com/ldksafj/saflkj
+# final test
+https://github.com/slchld1/readme_9
 
-![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/ldksafj/saflkj?style=flat&logo=appveyor)
-![Badge for GitHub last commit](https://img.shields.io/github/last-commit/ldksafj/saflkj?style=flat&logo=appveyor)
-![badge](https://img.shields.io/badge/license-ISC-brightgreen)<br />
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/slchld1/readme_9?style=flat&logo=appveyor)
+![Badge for GitHub last commit](https://img.shields.io/github/last-commit/slchld1/readme_9?style=flat&logo=appveyor)
+![badge](https://img.shields.io/badge/license-GPL-brightgreen)<br />
 ## Description
 test
 ## Table of Contents
@@ -19,15 +19,17 @@ test
 test
 
 ## Contributing
-test
+tes
 
 ## Tests
-test
+ttes
 
 ## Questions
-For any Additional questions, Please reach out to: ldkjaf
-Or visit ldksafj on github! Thank you.
+For any Additional questions, Please reach out to: jaecho203@gmail.com
+
+Or visit slchld1 on github! Thank you.
 
 ## License
-![License Badge](https://shields.io/badge/license-ISC-green)
-For more information, please refer to https://opensource.org/licenses/ISC.
+![License Badge](https://shields.io/badge/license-GPL-green)
+
+For more information, please refer to https://www.gnu.org/licenses/gpl-3.0.en.html.
