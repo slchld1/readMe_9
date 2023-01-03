@@ -3,13 +3,11 @@ function generateMarkdown(output) {
 // Table of Content
 let createTOC = `## Table of Contents`;
 
-if (output.usage !== '') { createTOC += `
-* [Usage](#usage)` };
-
-
 if (output.installation !== '') { createTOC += `
 * [Installation](#installation)` };
 
+if (output.usage !== '') { createTOC += `
+* [Usage](#usage)` };
 
 if (output.contributing !== '') { createTOC += `
 * [Contributing](#contributing)` };
@@ -36,6 +34,16 @@ ${output.description}\n`
 
 markdown += createTOC;
 
+// Installation Section
+let installMark = 
+`   
+## Installation
+${output.installation}\n`
+
+if (output.installation !== ""){
+  markdown += installMark;
+}
+
 // Usage Section
 let usageMark = 
 `
@@ -46,15 +54,6 @@ if (output.usage !== ""){
   markdown += usageMark;
 }
 
-// Installation Section
-let installMark = 
-`   
-## Installation
-${output.installation}\n`
-
-if (output.installation !== ""){
-  markdown += installMark;
-}
 
 // Contributing Section
 let contributingMark = 
@@ -104,7 +103,7 @@ return markdown
   return badge;
 }
 
-// TODO: Create a function that returns the license link
+// function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
@@ -134,7 +133,7 @@ function renderLicenseLink(license) {
 
 }
 
-// TODO: Create a function that returns the license section of README
+// function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = "";

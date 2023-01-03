@@ -1,19 +1,22 @@
-<h1 align="center">README.md Generator Using Node.js</h1>
+<h1 align="center">README.md Generator Using Node.js 📠</h1>
 <p>
     <img src="https://img.shields.io/github/repo-size/slchld1/readme_9" />
     <img src="https://img.shields.io/github/languages/top/slchld1/readme_9"  />
     <img src="https://img.shields.io/github/last-commit/slchld1/readme_9" />
 </p>
 
-## Description
+## Description 💾
+Every good projects need a professional README in order to transfer information and spread knowledge about the app.
+A README explains precisely what the app is about, how to use, how to install,  how to report issues and how to contribute to the app for further development.
 
-## User Story
+This application is a command-line based application that is run with Node.js. When run, it generates a README.md file based on the user's output. This enables us to quickly generate a professional README.md file instead of going through the trouble to write every code within the README for every project.
+## User Story ✉️
 ~~~
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ~~~
-## Acceptance Criteria
+## Acceptance Criteria 📩
 ~~~
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
@@ -31,13 +34,34 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ~~~
-## Table of Contents
+## Table of Contents 🔍
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [License](#license)
+## Installation 🔨
+To generate your own README, `git clone` the repo down to your local.
 
-## Installation
+Run `npm install` or `npm i` in order to install the following npm package,
 
-## Usage
+Make sure you follow the correct version listed in the dependencies of `package.json` file.
 
-## Contributing
+* [`inquirer`](https://www.npmjs.com/package/inquirer) will prompt you for your inputs from the command line.
 
-## Questions
+In order to start the application, direct your terminal to the same folder as where index.js is located,
+
+then simply type `npm start` in the command line.
+
+Answer the following questions prompt in the command line,
+
+After answering, a README.md file will be generated in the `./Develop` folder.
+## Usage 💡
+![Gif demo of README-generator](usageEx_1.gif)
+![Gif demo of README-generator](usageEX_2.gif)
+
+## Contributing ⌨️
+
+## Questions ❓
 
