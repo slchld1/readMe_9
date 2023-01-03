@@ -17,6 +17,11 @@ if (output.contributing !== '') { createTOC += `
 if (output.tests !== '') { createTOC += `
 * [Tests](#tests)` };
 
+if (output.questions !== '') { createTOC += `
+* [Questions](#questions)`   };
+
+if (output.license !== '') { createTOC += `
+* [License](#license)`  };
 // Markdown for readME
 let markdown =
 `
