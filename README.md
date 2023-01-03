@@ -3,6 +3,7 @@
     <img src="https://img.shields.io/github/repo-size/slchld1/readme_9" />
     <img src="https://img.shields.io/github/languages/top/slchld1/readme_9"  />
     <img src="https://img.shields.io/github/last-commit/slchld1/readme_9" />
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen"/>
 </p>
 
 ## Description 💾
@@ -37,8 +38,6 @@ THEN I am taken to the corresponding section of the README
 ## Table of Contents 🔍
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 * [License](#license)
 ## Installation 🔨
@@ -61,7 +60,17 @@ After answering, a README.md file will be generated in the `./Develop` folder.
 ![Gif demo of README-generator](usageEx_1.gif)
 ![Gif demo of README-generator](usageEx_2.gif)
 
-## Contributing ⌨️
+Once `npm start` is entered in the command line, `node index.js` is run. The app uses the `inquirer` package to prompt the questions created in our scripts to create the following README.md file.
+
+After the completion of the questions, command line will return `Success!` and the newly created README.md file can be found under the `Develop` folder.
+
+## License
+MIT License
+
 
 ## Questions ❓
+
+For any Additional questions, Please reach out to: jaecho203@gmail.com
+
+Or visit slchld1 on github! Thank you.
 
