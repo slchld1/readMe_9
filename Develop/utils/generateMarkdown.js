@@ -93,7 +93,7 @@ return markdown
     let badge = "";
     
     if(license != "None") {
-    badge = "![License Badge](https://shields.io/badge/license-" + license + "-green)";
+    badge = "![License Badge](https://shields.io/badge/license-" + license + "-green)\n";
   }
 
   return badge;
@@ -135,7 +135,6 @@ function renderLicenseSection(license) {
   let licenseSection = "";
 
   if (license != "None") {
-    licenseSection += "## License \n"
     licenseSection += "For more information, please refer to "+ renderLicenseLink(license) + ".\n";
   }
 
