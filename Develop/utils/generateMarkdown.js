@@ -139,7 +139,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   let licenseSection = "";
 
-  if (license != "None") {
+  if (license != "Unlicensed") {
     licenseSection += "\nFor more information, please refer to "+ renderLicenseLink(license) + ".\n";
   }
 
