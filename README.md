@@ -59,7 +59,7 @@ Answer the following questions prompt in the command line,
 After answering, a README.md file will be generated in the `./Develop` folder.
 ## Usage 💡
 ![Gif demo of README-generator](usageEx_1.gif)
-![Gif demo of README-generator](usageEX_2.gif)
+![Gif demo of README-generator](usageEx_2.gif)
 
 ## Contributing ⌨️
 
