@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const MarkDown = require('./Develop/utils/generateMarkdown.js');
+const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
 const fs = require('fs');
 const { resolveObjectURL } = require('buffer');
 
@@ -43,7 +43,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'Please enter who is Contributing to this Project:',
     },
     {
@@ -55,7 +55,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose your License:',
-        choices: ['MIT', 'ISC', 'Mozilla Public License 2.0', 'Unlicensed'],
+        choices: ['MIT', 'ISC', 'GPL', 'Apache', 'Unlicensed'],
     },
     {
         type: 'input',
@@ -110,7 +110,7 @@ function writeToFile(fileName, data) {
 function init() {
     return inquirer.prompt(questions)
     .then((data) => {
-        const mark = MarkDown.generateReadMe(data)
+        const mark = generateMarkdown(data)
         writeToFile(`README.md`, mark)
         return data;
     })
